@@ -1,7 +1,7 @@
 #  МИПиС
 ## mod-lab01-fa-cpp
 
-
+/////////////
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/UNN-IASR/mod-lab01-fa-cpp)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/UNN-IASR/mod-lab01-fa-cpp)
 
