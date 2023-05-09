@@ -9,3 +9,4 @@ int main() {
     std::cout << "Результат выполнению задачи 2: " << faStr2(str) << std::endl;
     std::cout << "Результат выполнения задачи 3: " << faStr3(str) << std::endl;
 }
+
