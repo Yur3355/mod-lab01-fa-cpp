@@ -14,15 +14,13 @@ unsigned int faStr1(const char* str) {
                 isDigits = true;
             }
         }
-        else{
+        else {
             if (inWord) {
-                if (!isDigits)
-                {
-                countWord++;
+                if (!isDigits) {
+                    countWord++;
                 }
-                else
-                {
-                isDigits = false;
+                else {
+                    isDigits = false;
                 }
                 inWord = false;
             }
@@ -44,16 +42,15 @@ unsigned int faStr2(const char* str) {
     bool inWord = false;
     bool isGood = false;
     while (str[i]) {
-        if (!isspace(str[i])){
-            if (!inWord){
+        if (!isspace(str[i])) {
+            if (!inWord) {
                 if (isalpha(str[i]) && isupper(str[i])) {
                     isGood = true;
                 }
                 inWord = true;
             }
-            else{
-                if (isGood) 
-                {
+            else {
+                if (isGood) {
                     if (!isalpha(str[i])) {
                         isGood = false;
                     }
@@ -90,8 +87,7 @@ unsigned int faStr3(const char* str) {
     while (str[i]) {
         if (!isspace(str[i])) {
             countSign++;
-            if (!inWord) 
-            {
+            if (!inWord) {
                 inWord = true;
                 countWord++;
             }
@@ -105,4 +101,3 @@ unsigned int faStr3(const char* str) {
     }
     return round(countSign / countWord);
 }
-
