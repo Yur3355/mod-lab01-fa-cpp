@@ -101,3 +101,4 @@ unsigned int faStr3(const char* str) {
     }
     return round(countSign / countWord);
 }
+
