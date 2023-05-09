@@ -13,13 +13,11 @@ unsigned int faStr1(const char* str) {
             if (isdigit(str[i])) {
                 isDigits = true;
             }
-        }
-        else {
+        }else {
             if (inWord) {
                 if (!isDigits) {
                     countWord++;
-                }
-                else {
+                }else {
                     isDigits = false;
                 }
                 inWord = false;
@@ -48,16 +46,14 @@ unsigned int faStr2(const char* str) {
                     isGood = true;
                 }
                 inWord = true;
-            }
-            else {
+            }else {
                 if (isGood) {
                     if (!isalpha(str[i])) {
                         isGood = false;
                     }
                 }
             }
-        }
-        else {
+        }else {
             if (inWord) {
                 if (isGood) {
                     countWord++;
@@ -91,8 +87,7 @@ unsigned int faStr3(const char* str) {
                 inWord = true;
                 countWord++;
             }
-        }
-        else {
+        }else {
             if (inWord) {
                 inWord = false;
             }
